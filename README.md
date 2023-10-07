@@ -29,12 +29,12 @@ CulTechConnect's mission is to bring people from around the world closer togethe
 
 ## **Technologies Used**
 
-- Spring Boot
+- Spring Boot v3.0.11
 - Spring Cloud
 - Java
 - MySql
 - Maven
-- Docker
+- Docker v4.19.0
 - RESTful APIs
 
 ---
@@ -71,4 +71,4 @@ For detailed usage instructions, refer to the documentation within each microser
 
 ## **License**
 
-This project is licensed under the [ESPRIT-5SAE2](LICENSE).
+This project is licensed under the [ESPRIT-5SAE2](https://github.com/Wael-1497/CulTechConnect-BackEnd).
