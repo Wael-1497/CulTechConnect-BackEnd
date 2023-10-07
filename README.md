@@ -1,3 +1,4 @@
+# **CulTechConnect**
 
 CulTechConnect aims to unite people from around the world, fostering intercultural understanding, and catalyzing innovation by connecting diverse cultures and skills. Join us to explore, collaborate, and celebrate the cultural diversity of our planet, while staying connected across borders.
 
