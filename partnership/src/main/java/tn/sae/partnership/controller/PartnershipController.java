@@ -1,2 +1,29 @@
-package tn.sae.partnership.controller;public class PartnershipController {
+package tn.sae.partnership.controller;
+
+import lombok.RequiredArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.*;
+import tn.sae.partnership.entity.Partnership;
+import tn.sae.partnership.service.PartnershipService;
+
+import java.util.List;
+
+@RestController
+@RequestMapping("/partnership")
+@RequiredArgsConstructor
+public class PartnershipController {
+    @Autowired
+    PartnershipService partnershipService;
+
+    @PostMapping("/add-part/{idEvenement}")
+    @ResponseBody
+    void addPartenariat(@RequestBody Partnership partenaire, @PathVariable int idEvenement) {
+        partnershipService.addPartenariat(partenaire, idEvenement);
+    }
+    @GetMapping("/all-part")
+    @ResponseBody
+    List<Partnership> getAllPartenariats(){
+        return partnershipService.getAllPartenariats();
+    }
+
 }
