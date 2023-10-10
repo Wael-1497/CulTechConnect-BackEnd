@@ -9,6 +9,7 @@
         <option value="$PROJECT_DIR$/discovery/pom.xml" />
         <option value="$PROJECT_DIR$/gateway/pom.xml" />
         <option value="$PROJECT_DIR$/partnership/pom.xml" />
+        <option value="$PROJECT_DIR$/checkout-stripe/pom.xml" />
       </list>
     </option>
   </component>
