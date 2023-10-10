@@ -4,6 +4,10 @@
   <groupId>tn.sae</groupId>
   <artifactId>CulTechConnect</artifactId>
   <version>1.0-SNAPSHOT</version>
-  <name>Archetype - CulTechConnect</name>
+    <packaging>pom</packaging>
+    <name>Archetype - CulTechConnect</name>
   <url>http://maven.apache.org</url>
+    <modules>
+        <module>blog</module>
+    </modules>
 </project>
