@@ -10,12 +10,13 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="CulTechConnect" />
         <module name="checkout-stripe" />
         <module name="config-server" />
         <module name="partnership" />
         <module name="discovery" />
+        <module name="CulTechConnect" />
         <module name="gateway" />
+        <module name="CulTechConnect-BackEnd" />
       </profile>
     </annotationProcessing>
   </component>
