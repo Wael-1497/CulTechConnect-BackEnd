@@ -30,4 +30,7 @@ public class PartnershipService implements IpartnershipService {
         return partnershipRepository.findAll();
     }
 
+    public Partnership getPartnershipById(int idPartnership) {
+        return partnershipRepository.findById(idPartnership).orElse(null);
+    }
 }

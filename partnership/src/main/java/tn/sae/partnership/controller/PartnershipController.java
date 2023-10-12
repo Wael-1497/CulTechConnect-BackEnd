@@ -26,5 +26,10 @@ public class PartnershipController {
     List<Partnership> getAllPartenariats(){
         return partnershipService.getAllPartenariats();
     }
-
+    @CrossOrigin(origins = "*")
+    @GetMapping("/part/{idPartnership}")
+    @ResponseBody
+    Partnership getPartnershipById(@PathVariable("idPartnership") Integer idPartnership){
+        return partnershipService.getPartnershipById(idPartnership);
+    }
 }
