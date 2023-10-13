@@ -10,4 +10,5 @@ public interface IpartnershipService {
     Partnership getPartnershipById(int idPartnership);
     void DeletePartnershipById(int idPartnership);
 
+    void UpdatePartnershipById(Integer id, Partnership partnership);
 }

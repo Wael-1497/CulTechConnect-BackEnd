@@ -40,4 +40,9 @@ public class PartnershipController {
         response.put("deleted", Boolean.TRUE);
         return response;
     }
+    @PutMapping("/update-part/{id}")
+    @ResponseBody
+    public void UpdatePartnershipById(@PathVariable(value = "id") Integer id, @RequestBody Partnership partnership){
+        partnershipService.UpdatePartnershipById(id,partnership);
+    }
 }

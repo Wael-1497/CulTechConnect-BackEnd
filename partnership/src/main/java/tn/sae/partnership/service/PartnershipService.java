@@ -44,4 +44,13 @@ public class PartnershipService implements IpartnershipService {
         partnershipRepository.delete(partnership);
     }
     }
+
+    @Override
+    public void UpdatePartnershipById(Integer id, Partnership partnership) {
+        if (partnershipRepository.findById(id).orElse(null) != null) {
+            partnershipRepository.save(partnership);
+        } else {
+            throw new RuntimeException("Le partenariat avec l'ID " + partnership.getId() + " n'a pas été trouvé.");
+        }
+    }
 }
