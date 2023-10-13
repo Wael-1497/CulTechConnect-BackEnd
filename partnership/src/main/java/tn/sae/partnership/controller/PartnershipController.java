@@ -14,19 +14,16 @@ import java.util.List;
 public class PartnershipController {
     @Autowired
     PartnershipService partnershipService;
-
     @PostMapping("/add-part/{idEvenement}")
     @ResponseBody
     void addPartenariat(@RequestBody Partnership partenaire, @PathVariable int idEvenement) {
         partnershipService.addPartenariat(partenaire, idEvenement);
     }
-    @CrossOrigin(origins = "*")
     @GetMapping("/all-part")
     @ResponseBody
     List<Partnership> getAllPartenariats(){
         return partnershipService.getAllPartenariats();
     }
-    @CrossOrigin(origins = "*")
     @GetMapping("/part/{idPartnership}")
     @ResponseBody
     Partnership getPartnershipById(@PathVariable("idPartnership") Integer idPartnership){
