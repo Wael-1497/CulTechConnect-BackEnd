@@ -6,5 +6,4 @@ import tn.sae.partnership.entity.Partnership;
 
 @Repository
 public interface PartnershipRepository extends JpaRepository<Partnership, Integer> {
-
 }

@@ -6,7 +6,10 @@ import org.springframework.web.bind.annotation.*;
 import tn.sae.partnership.entity.Partnership;
 import tn.sae.partnership.service.PartnershipService;
 
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+
 @CrossOrigin(origins = "*")
 @RestController
 @RequestMapping("/partnership")
@@ -28,5 +31,13 @@ public class PartnershipController {
     @ResponseBody
     Partnership getPartnershipById(@PathVariable("idPartnership") Integer idPartnership){
         return partnershipService.getPartnershipById(idPartnership);
+    }
+    @DeleteMapping("/delete-part/{idPartnership}")
+    @ResponseBody
+    public Map<String, Boolean> DeletePartnershipById(@PathVariable(value ="idPartnership") Integer idPartnership){
+        partnershipService.DeletePartnershipById(idPartnership);
+        Map<String, Boolean> response = new HashMap<>();
+        response.put("deleted", Boolean.TRUE);
+        return response;
     }
 }

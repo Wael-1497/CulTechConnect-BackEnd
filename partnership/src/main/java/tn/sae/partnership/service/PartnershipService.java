@@ -33,4 +33,15 @@ public class PartnershipService implements IpartnershipService {
     public Partnership getPartnershipById(int idPartnership) {
         return partnershipRepository.findById(idPartnership).orElse(null);
     }
+
+    @Override
+    public void DeletePartnershipById(int idPartnership) {
+    Partnership partnership = partnershipRepository.findById(idPartnership).orElse(null);
+
+    if (partnership == null) {
+        throw new RuntimeException("Le partenariat avec l'ID " + idPartnership + " n'a pas été trouvé.");
+    }else {
+        partnershipRepository.delete(partnership);
+    }
+    }
 }

@@ -8,5 +8,6 @@ public interface IpartnershipService {
     void addPartenariat(Partnership partenaire, int idEvenement);
     List<Partnership> getAllPartenariats();
     Partnership getPartnershipById(int idPartnership);
+    void DeletePartnershipById(int idPartnership);
 
 }
