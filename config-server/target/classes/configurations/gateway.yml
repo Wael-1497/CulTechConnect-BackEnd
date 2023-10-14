@@ -1,0 +1,27 @@
+eureka:
+  client:
+    register-with-eureka: true
+server:
+  port: 8222
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      discovery:
+        locator:
+          enabled: true
+      routes:
+        - id: partnership
+          uri: http://localhost:8082
+          predicates:
+            - Path=/partnership/**
+        - id: checkout-stripe
+          uri: http://localhost:8777
+          predicates:
+            - Path=/partnership/api/**
+
+management:
+  tracing:
+    sampling:
+      probability: 1.0
