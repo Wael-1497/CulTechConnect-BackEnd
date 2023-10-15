@@ -4,7 +4,14 @@
     <file url="file://$PROJECT_DIR$/config-server/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config-server/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/discovery/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/event/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eventReservation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/events/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/events/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/eventsReservation/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/gateway/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/reservation/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/eventsReservation/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
   </component>
