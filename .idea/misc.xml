@@ -8,6 +8,12 @@
         <option value="$PROJECT_DIR$/config-server/pom.xml" />
         <option value="$PROJECT_DIR$/discovery/pom.xml" />
         <option value="$PROJECT_DIR$/gateway/pom.xml" />
+        <option value="$PROJECT_DIR$/authentication-service/pom.xml" />
+        <option value="$PROJECT_DIR$/Chat/pom.xml" />
+        <option value="$PROJECT_DIR$/checkout-stripe/pom.xml" />
+        <option value="$PROJECT_DIR$/events/pom.xml" />
+        <option value="$PROJECT_DIR$/partnership/pom.xml" />
+        <option value="$PROJECT_DIR$/userManagement/pom.xml" />
       </list>
     </option>
   </component>
