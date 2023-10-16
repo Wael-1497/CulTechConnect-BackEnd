@@ -12,6 +12,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="checkout-stripe" />
         <module name="config-server" />
+        <module name="authentication-service" />
         <module name="partnership" />
         <module name="discovery" />
         <module name="CulTechConnect" />
@@ -22,6 +23,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="authentication-service" options="-parameters" />
       <module name="checkout-stripe" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="discovery" options="-parameters" />
