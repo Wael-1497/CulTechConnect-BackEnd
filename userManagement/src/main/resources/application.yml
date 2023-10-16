@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: auth
+  config:
+    import: optional:configserver:http://localhost:8888
+  datasource:
+    url: jdbc:mysql://localhost:3306/auth?useSSL=false&serverTimezone=UTC&useLegacyDatetimeCode=false
+    username: root
+    password:
+
+
+

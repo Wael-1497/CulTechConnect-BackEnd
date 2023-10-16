@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="spring-security-config-5.2.1.RELEASE-sources">
+    <CLASSES />
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/springframework/security/spring-security-config/5.2.1.RELEASE/spring-security-config-5.2.1.RELEASE-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
