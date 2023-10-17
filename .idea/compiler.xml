@@ -18,6 +18,7 @@
         <module name="discovery" />
         <module name="CulTechConnect" />
         <module name="Chat" />
+        <module name="blog" />
         <module name="gateway" />
         <module name="CulTechConnect-BackEnd" />
         <module name="events" />
@@ -28,6 +29,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Chat" options="-parameters" />
       <module name="authentication-service" options="-parameters" />
+      <module name="blog" options="-parameters" />
       <module name="checkout-stripe" options="-parameters" />
       <module name="config-server" options="-parameters" />
       <module name="discovery" options="-parameters" />
