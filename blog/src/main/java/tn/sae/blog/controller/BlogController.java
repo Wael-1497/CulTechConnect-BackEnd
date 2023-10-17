@@ -6,7 +6,7 @@ import tn.sae.blog.entity.Blog;
 import tn.sae.blog.service.BlogService;
 
 import java.util.List;
-
+@CrossOrigin(origins = "http://localhost:4200")
 @RestController
 @RequestMapping("/blog")
 public class BlogController {
@@ -15,7 +15,7 @@ public class BlogController {
 
     private BlogService blogService;
 
-    @GetMapping("/posts")
+    @GetMapping("/postss")
     public List<Blog> getAllBlogPosts() {
         return blogService.getAllBlogPosts();
     }
