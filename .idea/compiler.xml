@@ -10,16 +10,18 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="checkout-stripe" />
         <module name="userManagement" />
+        <module name="partnership" />
+        <module name="blog" />
+        <module name="CulTechConnect-BackEnd" />
+        <module name="checkout-stripe" />
         <module name="config-server" />
         <module name="authentication-service" />
-        <module name="partnership" />
         <module name="discovery" />
         <module name="CulTechConnect" />
         <module name="Chat" />
-        <module name="blog" />
-        <module name="CulTechConnect-BackEnd" />
+        <module name="reservation" />
+        <module name="ExchangeProg" />
         <module name="gateway" />
         <module name="events" />
       </profile>
@@ -31,6 +33,7 @@
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="Chat" options="-parameters" />
+      <module name="ExchangeProg" options="-parameters" />
       <module name="authentication-service" options="-parameters" />
       <module name="blog" options="-parameters" />
       <module name="chat-app" options="-parameters" />
@@ -40,6 +43,7 @@
       <module name="events" options="-parameters" />
       <module name="gateway" options="-parameters" />
       <module name="partnership" options="-parameters" />
+      <module name="reservation" options="-parameters" />
       <module name="userManagement" options="-parameters" />
     </option>
   </component>

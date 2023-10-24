@@ -19,7 +19,27 @@ spring:
         - id: checkout-stripe
           uri: http://localhost:8777
           predicates:
-            - Path=/partnership/api/**
+            - Path=/stripe/api/**
+        - id: blog
+          uri: http://localhost:8787
+          predicates:
+            - Path=/blog/api/**
+        - id: events
+          uri: http://localhost:8083
+          predicates:
+            - Path=/events/api/**
+        - id: Chat
+          uri: http://localhost:8084
+          predicates:
+            - Path=/Chat/api/**
+        - id: chat-app
+          uri: http://localhost:8088
+          predicates:
+            - Path=/chatApp/api/**
+        - id: reservation
+          uri: http://localhost:8086
+          predicates:
+            - Path=/reservation/api/**
 
 management:
   tracing:

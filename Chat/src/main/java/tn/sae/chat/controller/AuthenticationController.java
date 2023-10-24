@@ -9,8 +9,7 @@ import tn.sae.chat.dto.UserDto;
 import tn.sae.chat.service.AuthenticationService;
 
 @RequiredArgsConstructor
-@CrossOrigin(origins = "http://localhost:4200")
-
+@CrossOrigin(origins = "*")
 @RestController
 public class AuthenticationController {
     private final AuthenticationService authenticationService;

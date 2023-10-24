@@ -36,40 +36,40 @@ public class SecurityConfig {
     @Value("${allowed.domain:http://localhost:80}")
     private String allowedDomain;
 
-    @Bean
-    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
-        http.cors().configurationSource(request -> {
-            var cors = new CorsConfiguration();
-            cors.setAllowedOrigins(List.of(allowedDomain));
-            cors.setAllowedMethods(List.of("GET","POST", "PUT", "DELETE", "OPTIONS"));
-            cors.setAllowedHeaders(List.of("*"));
-            return cors;
-        });
-        http.csrf().disable();
-        return http
-                .authorizeHttpRequests(auth -> auth
-                        .requestMatchers("/register", "/login").permitAll()
-                        .anyRequest().authenticated())
-                .oauth2ResourceServer()
-                .jwt().and().bearerTokenResolver(this::tokenExtractor)
-                .and()
-                .sessionManagement(session -> session
-                        .sessionCreationPolicy(SessionCreationPolicy.STATELESS))
-                .httpBasic().disable()
-                .build();
-    }
-
-    private String tokenExtractor(HttpServletRequest request) {
-        String header = request.getHeader(HttpHeaders.AUTHORIZATION);
-        if (header != null) {
-            return header.replace("Bearer ", "");
-        }
-        String token = request.getParameter("token");
-        if (token != null && !token.isEmpty()) {
-            return token;
-        }
-        return null;
-    }
+//    @Bean
+//    public SecurityFilterChain securityFilterChain(HttpSecurity http) throws Exception {
+//        http.cors().configurationSource(request -> {
+//            var cors = new CorsConfiguration();
+//            cors.setAllowedOrigins(List.of(allowedDomain));
+//            cors.setAllowedMethods(List.of("GET","POST", "PUT", "DELETE", "OPTIONS"));
+//            cors.setAllowedHeaders(List.of("*"));
+//            return cors;
+//        });
+//        http.csrf().disable();
+//        return http
+//                .authorizeHttpRequests(auth -> auth
+//                        .requestMatchers("/register", "/login").permitAll()
+//                        .anyRequest().authenticated())
+//                .oauth2ResourceServer()
+//                .jwt().and().bearerTokenResolver(this::tokenExtractor)
+//                .and()
+//                .sessionManagement(session -> session
+//                        .sessionCreationPolicy(SessionCreationPolicy.STATELESS))
+//                .httpBasic().disable()
+//                .build();
+//    }
+//
+//    private String tokenExtractor(HttpServletRequest request) {
+//        String header = request.getHeader(HttpHeaders.AUTHORIZATION);
+//        if (header != null) {
+//            return header.replace("Bearer ", "");
+//        }
+//        String token = request.getParameter("token");
+//        if (token != null && !token.isEmpty()) {
+//            return token;
+//        }
+//        return null;
+//    }
 
     @Bean
     JwtDecoder jwtDecoder() {
