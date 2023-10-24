@@ -25,7 +25,6 @@
       <module name="event (1) (tn.sae.events)" target="17" />
       <module name="eventReservation" target="17" />
       <module name="eventsReservation" target="17" />
-      <module name="reservation" target="17" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">

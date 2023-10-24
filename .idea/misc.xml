@@ -10,8 +10,8 @@
         <option value="$PROJECT_DIR$/gateway/pom.xml" />
         <option value="$PROJECT_DIR$/events/pom.xml" />
         <option value="$PROJECT_DIR$/src/eventsReservation/pom.xml" />
-        <option value="$PROJECT_DIR$/reservation/pom.xml" />
         <option value="$PROJECT_DIR$/event/pom.xml" />
+        <option value="$PROJECT_DIR$/reservation/pom.xml" />
       </list>
     </option>
   </component>

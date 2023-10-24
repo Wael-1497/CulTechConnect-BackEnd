@@ -12,6 +12,15 @@ spring:
         locator:
           enabled: true
       routes:
+        - id: events
+          uri: http://localhost:8083
+          predicates:
+            - Path=/events/**
+        - id: reservation
+          uri: http://localhost:8091
+          predicates:
+            - Path=/reservation/**
+            -
         - id: students
           uri: http://localhost:8090
           predicates:
