@@ -25,6 +25,8 @@ public class Partnership {
 
     private String typePartenariat;
     private float budget;
+
+    @Column(nullable = true)
     private int idEvenement; // relation avec la table evenement
 
 
