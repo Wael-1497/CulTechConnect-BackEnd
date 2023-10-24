@@ -1,11 +1,14 @@
 package tn.sae.authenticationservice.dto;
 
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.NotBlank;
+
 public class SignupRequest {
-
+    @Email
     private String email;
-
+    @NotBlank
     private String name;
-
+    @NotBlank
     private String password;
 
     public String getEmail() {
